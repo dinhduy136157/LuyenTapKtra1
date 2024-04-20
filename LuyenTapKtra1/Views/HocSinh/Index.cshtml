@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+</style>
+<h2>Danh sách học sinh điểm TK dưới 13</h2>
+<table>
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Tên
+        </th>
+        <th>
+            Lớp
+        </th>
+        <th>
+            Điểm Toán
+        </th>
+        <th>
+            Điểm Văn
+        </th>
+        <th>
+            Điểm Tổng Kết
+        </th>
+    </tr>
+
+    @foreach (var item in ViewBag.List1)
+    {
+        <tr>
+
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Lop
+            </td>
+            <td>
+                @item.diemToan
+            </td>
+            <td>
+                @item.diemVan
+            </td>
+            <td>
+                @item.diemTk
+            </td>
+        </tr>
+
+    }
+</table>
+<h2>Danh sách học sinh học Lớp L001</h2>
+<table border="1" cellpadding="1">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Tên
+        </th>
+        <th>
+            Lớp
+        </th>
+        <th>
+            Điểm Toán
+        </th>
+        <th>
+            Điểm Văn
+        </th>
+        <th>
+            Điểm Tổng Kết
+        </th>
+    </tr>
+
+    @foreach (var item in ViewBag.List2)
+    {
+        <tr>
+
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Lop
+            </td>
+            <td>
+                @item.diemToan
+            </td>
+            <td>
+                @item.diemVan
+            </td>
+            <td>
+                @item.diemTk
+            </td>
+        </tr>
+
+    }
+
+
+</table>
+
+

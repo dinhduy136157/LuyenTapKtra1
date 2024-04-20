@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+
+
+<h2>Add</h2>
+
+<form action="/HocSinh/Add" method="post">
+    <label>Mã HS: </label>
+    <input type="text" name="Id" value="" />
+    <br />
+    <label>Tên HS: </label>
+    <input type="text" name="Name" value="" />
+    <br />
+
+    <label>Lớp: </label>
+    <select name="Lop">
+        <option value="L001">Lớp 001</option>
+        <option value="L002">Lớp 002</option>
+        <option value="L003">Lớp 003</option>
+    </select>
+    <br />
+    <label>Điểm Toán: </label>
+    <input type="number" name="diemToan" value="" />
+    <br />
+    <label>Điểm Văn: </label>
+    <input type="number" name="diemVan" value="" />
+    <br />
+    <button>Thêm</button>
+
+
+
+</form>
+

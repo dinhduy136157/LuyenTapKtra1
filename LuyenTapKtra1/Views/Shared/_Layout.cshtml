@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .layout1{
+            width: 70%;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .text-header{
+            text-align: center;
+            background-color: darkslateblue;
+            padding: 20px 0px 20px 0px;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            background-color: deepskyblue;
+            padding: 10px 0px 10px 0px;
+        }
+        li {
+            display: inline-block;
+            width: 40%;
+            text-align: center;
+        }
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout1">
+        <div class="text-header">Kiểm tra 1</div>
+        <ul>
+            <li>
+                <a href="/HocSinh/Index">Hiển thị danh sách</a>
+                
+            </li>
+            <li>
+                <a href="/HocSinh/Add">Thêm</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container body-content">
+        @RenderBody()        
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
